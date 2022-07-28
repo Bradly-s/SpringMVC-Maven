@@ -12,7 +12,6 @@ public interface CarGoDao {
 //    @Delete("delete from cargo where id = #{id} ")
     void delete(Integer id);
 
-
 //    @Update("update cargo set name = #{name} , standard = #{standard} , number = #{number} , location = #{location} , introduction = #{introduction} where id = #{id} ")
     void update(CarGo account);
 

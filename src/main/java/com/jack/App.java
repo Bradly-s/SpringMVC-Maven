@@ -10,6 +10,5 @@ public class App {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         System.out.println(ctx.getBeanDefinitionCount());
 
-
     }
 }

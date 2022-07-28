@@ -14,4 +14,5 @@ public interface ICargoService {
     List<CarGo> findAll();
 
     CarGo findById(Integer id);
+
 }

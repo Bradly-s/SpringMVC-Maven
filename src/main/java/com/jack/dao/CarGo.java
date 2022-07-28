@@ -11,7 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class CarGo {
     //注意：属性必须与数据库表中字段一一对应，缺一不可（如缺少standard属性，则会报错：java.lang.NoSuchFieldException: standard）
-
     private static final long serialVersionUID = 1L;
     // id 主键
     private Integer id;
