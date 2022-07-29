@@ -29,36 +29,48 @@ public class CarGo {
     private String introduction;
 
 
+    @Override
+    public String toString() {
+        return "CarGo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", standard='" + standard + '\'' +
+                ", pic='" + pic + '\'' +
+                ", number='" + number + '\'' +
+                ", location='" + location + '\'' +
+                ", introduction='" + introduction + '\'' +
+                '}';
+    }
 
-//    public String getId() {
-//        return id;
-//    }
-//
-//    public void setId(String id) {
-//        this.id = id;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getLocation() {
-//        return location;
-//    }
-//
-//    public void setLocation(String location) {
-//        this.location = location;
-//    }
-//
-//    public String getIntroduction() {
-//        return introduction;
-//    }
-//
-//    public void setIntroduction(String introduction) {
-//        this.introduction = introduction;
-//    }
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
 }
