@@ -1,18 +1,22 @@
 package com.jack.service;
 
-import com.jack.dao.CarGo;
+import com.jack.domain.Cargo;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
+@Transactional //表示所有方法进行事务管理
 public interface ICargoService {
 
-    void save(CarGo carGo);
+    public boolean save(Cargo cargo);
 
-    void delete(Integer id);
+    public boolean delete(Integer id);
 
-    void update(CarGo carGo);
+    public boolean update(Cargo carGo);
 
-    List<CarGo> findAll();
+    public List<Cargo> findAll();
 
-    CarGo findById(Integer id);
+    public Cargo findById(Integer id);
 
+//    Cargo getById(Integer id);
 }
