@@ -23,12 +23,12 @@ public class JdbcConfig {
     //配置连接池
     @Bean
     public DataSource dataSource(){
-        DruidDataSource ds = new DruidDataSource();
-        ds.setDriverClassName(driver);
-        ds.setUrl(url);
-        ds.setUsername(username);
-        ds.setPassword(password);
-        return ds;
+        DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setDriverClassName(driver);
+        dataSource.setUrl(url);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
+        return dataSource;
     }
 
     //Spring事务管理需要的平台事务管理器对象
